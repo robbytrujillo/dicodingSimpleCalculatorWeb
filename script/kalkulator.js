@@ -62,22 +62,6 @@ for (const button of buttons) {
     });
 }
 
-// for (const button of buttons) {
-//     button.addEventListener('click', function(event) {
-//         //mendapatkab objek elemen yang diklik
-//         const target = event.target;
-
-//         if (target.classList.contains('clear')) {
-//             clearCalculator();
-//             updateDisplay();
-//             return;
-//         }
-
-//         inputDigit(target.innerText);
-//         updateDisplay();
-//     });
-// }
-
 function inverseNumber() {
     if (calculator.displayNumber === '0') {
         return;
@@ -118,9 +102,6 @@ function performCalculation() {
             operator: calculator.operator,
             result: result
         }
-        
-    
-    
         
             putHistory(history);
             calculator.displayNumber = result;
